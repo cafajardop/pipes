@@ -2,6 +2,21 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
 
+
+## Introduccion a los Pipes
+
+Pipes uppercase y lowercase
+Pipe Slice
+Pice Decimal
+Pipe Percent
+Pipe Currency
+Pipe Json
+Pipe Async
+Pipe Date
+Pipes personalizados
+Capitalizar palabras y nombres
+Creación de un pipe, que permite cargar recursos externos de forma segura.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
