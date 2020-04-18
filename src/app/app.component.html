@@ -13,6 +13,11 @@
       </thead>
       <tbody>
         <tr>
+          <td>{{nombre2}}</td>
+          <td> Capitalizado </td>
+          <td> {{nombre2 | capitalizado }} </td>
+        </tr>
+        <tr>
           <td>{{nombre}}</td>
           <td> uppercase </td>
           <td> {{nombre | uppercase}} </td>
@@ -54,7 +59,7 @@
         </tr>
         <tr>
           <td>{{salario}}</td>
-          <td> Currency Ver documentacion: <a href="https://en.wikipedia.org/wiki/ISO_4217">ISO_4217</a>   </td>
+          <td> Currency Ver documentacion: <a href="https://en.wikipedia.org/wiki/ISO_4217">ISO_4217</a> </td>
           <td> {{salario | currency}} </td>
         </tr>
         <tr>
@@ -104,8 +109,31 @@
         </tr>
         <tr>
           <td>{{fecha}}</td>
-          <td> Fecha locale ejecutar comando <small><strong>ng add @angular/localize</strong></small> <a href="https://angular.io/guide/i18n#setting-up-the-locale-of-your-app"> locale</a> </td>
+          <td> Fecha locale ejecutar comando <small><strong>ng add @angular/localize</strong></small> <a
+              href="https://angular.io/guide/i18n#setting-up-the-locale-of-your-app"> locale</a> </td>
           <td> {{fecha | date:'MMMM - dd'}} </td>
+        </tr>
+        <tr>
+          <td>{{fecha}}</td>
+          <td>
+            date:'MMMM - dd':'':'es'
+            <br>
+            <button class="mr-1 btn btn-primary">Español</button>
+            <button class="mr-1 btn btn-secondary">Inglés</button>
+            <button class="mr-1 btn btn-success">Francés</button>
+          </td>
+        </tr>
+        <tr>
+          <td>{{nombre}}</td>
+          <td>
+            Contraseña
+            <br>
+            <button (click)="activar = !activar" 
+            class="btn btn-outline-primary">
+              Activar/Desactivar
+            </button>
+          </td>
+          <td>{{nombre | contrasena:activar}}</td>
         </tr>
       </tbody>
     </table>
@@ -123,5 +151,14 @@
 <div class="row mb-5">
   <div class="col">
     <pre>{{heroe | json}}</pre>
+  </div>
+</div>
+
+<h3 class="mt-4">DomSeguro</h3>
+<hr>
+<div class="row mb-5">
+  <div class="col">
+    <iframe width="560" height="315" [src]="videoUrl | domseguro" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </div>

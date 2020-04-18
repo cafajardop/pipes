@@ -6,12 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  nombre: string = 'Capitán América';
-  cursos: string[] = ['JavaScript', 'NodeJS', 'React', 'Angular', 'Mongo', 'CSharp'];
-  PI: number = Math.PI;
-  porcentaje: number = 0.234;
-  salario: number = 1234.5;
-  fecha: Date = new Date();
+  nombre     : string   = 'Capitán América';
+  nombre2    : string   = 'CarLOS AnDrEs fAjARdo pEdRaZa'
+  cursos     : string[] = ['JavaScript', 'NodeJS', 'React', 'Angular', 'Mongo', 'CSharp'];
+  PI         : number   = Math.PI;
+  porcentaje : number   = 0.234;
+  salario    : number   = 1234.5;
+  fecha      : Date     = new Date();
+
+  videoUrl   :string    = 'https://www.youtube.com/embed/2ZRZodDcu_A';
 
   valorPromesa = new Promise<string>((resolve) => {
 
